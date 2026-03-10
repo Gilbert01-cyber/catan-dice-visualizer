@@ -78,3 +78,29 @@ function simulateDice() {
 
   document.getElementById("results").innerHTML = output;
 }
+function rollDiceOnce() {
+
+  const die1El = document.getElementById("die1");
+  const die2El = document.getElementById("die2");
+
+  die1El.classList.add("roll");
+  die2El.classList.add("roll");
+
+  setTimeout(() => {
+
+    let die1 = Math.floor(Math.random() * 6) + 1;
+    let die2 = Math.floor(Math.random() * 6) + 1;
+
+    die1El.textContent = die1;
+    die2El.textContent = die2;
+
+    let total = die1 + die2;
+
+    document.getElementById("rollResult").textContent =
+      "You rolled " + die1 + " + " + die2 + " = " + total;
+
+    die1El.classList.remove("roll");
+    die2El.classList.remove("roll");
+
+  }, 200);
+}
