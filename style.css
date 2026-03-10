@@ -1,0 +1,62 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 300px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+.best-number {
+  font-weight: bold;
+  background-color: #fff3cd;
+}
+
+#chart {
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.bar-label {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.bar {
+  height: 24px;
+  background-color: #4caf50;
+  color: white;
+  text-align: right;
+  padding-right: 8px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

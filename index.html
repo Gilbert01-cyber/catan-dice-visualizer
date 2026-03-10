@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dice Probability Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Dice Probability Visualizer</h1>
+
+    <p>
+      This tool helps players understand which dice numbers appear most often
+      when rolling two dice.
+    </p>
+
+    <h2>Best Settlement Numbers</h2>
+    <div id="bestSpots"></div>
+
+    <h2>Dice Probability Table</h2>
+
+    <table id="probabilityTable">
+      <tr>
+        <th>Dice Number</th>
+        <th>Probability</th>
+      </tr>
+    </table>
+
+    <h2>Probability Chart</h2>
+    <div id="chart"></div>
+
+    <br />
+
+    <button onclick="simulateDice()">Simulate 1000 Dice Rolls</button>
+
+    <h2>Simulation Results</h2>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
